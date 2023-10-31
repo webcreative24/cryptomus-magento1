@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<config>
+  <sections>
+    <payment>
+      <groups>
+        <bajaj translate="label" module="bajaj">
+          <label>Cryptomus</label>
+          <sort_order>1000</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>0</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>1</sort_order>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>2</sort_order>
+            </active>
+            <merchant_id translate="label">
+              <label>Merchant ID</label>
+              <frontend_type>text</frontend_type>
+              <show_in_default>1</show_in_default>
+              <show_in_website>0</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>1</sort_order>
+            </merchant_id>
+            <api_key translate="label">
+              <label>API Key</label>
+              <frontend_type>text</frontend_type>
+              <show_in_default>1</show_in_default>
+              <show_in_website>0</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>1</sort_order>
+            </api_key>
+            <lifetime translate="label">
+              <label>Lifetime</label>
+              <frontend_type>text</frontend_type>
+              <show_in_default>1</show_in_default>
+              <show_in_website>0</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>1</sort_order>
+            </lifetime>
+            <order_status translate="label">
+              <label>New order status</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_order_status</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>3</sort_order>
+            </order_status>
+            <allowspecific translate="label">
+              <label>Payment from applicable countries</label>
+              <frontend_type>allowspecific</frontend_type>
+              <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <sort_order>4</sort_order>
+            </allowspecific>
+            <specificcountry translate="label">
+              <label>Payment from Specific countries</label>
+              <frontend_type>multiselect</frontend_type>
+              <source_model>adminhtml/system_config_source_country</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <sort_order>5</sort_order>
+            </specificcountry>
+            <sort_order translate="label">
+                <label>Sort order</label>
+                <frontend_type>text</frontend_type>
+                <sort_order>12</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+				<show_in_store>0</show_in_store>
+            </sort_order>
+          </fields>
+        </bajaj>
+      </groups>
+    </payment>
+  </sections>
+</config>
