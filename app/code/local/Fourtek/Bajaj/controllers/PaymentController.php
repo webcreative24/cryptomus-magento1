@@ -75,6 +75,7 @@ class Fourtek_Bajaj_PaymentController extends Mage_Core_Controller_Front_Action
             'url_return' => $successUrl,
             'url_callback' => Mage::getUrl('bajaj/payment/succesorder', array('_secure' => true)),
             'lifetime' => $lifetime,
+            'plugin_name' => 'magento_1',
         ];
         try {
             $paymentClient = $this->initPaymentClient();
